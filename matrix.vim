@@ -7,11 +7,13 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "green"
+let g:colors_name = "matrix"
 
 " Define bright green and background colors directly for easier access
 let s:bright_green_gui = "#00FF00"
 let s:bright_green_cterm = "46"
+let s:dark_green_gui = "#008000"  
+let s:dark_green_cterm = "22"     
 let s:dark_background_gui = "#000000"
 let s:dark_background_cterm = "0"
 
@@ -26,7 +28,7 @@ endfunction
 
 " Apply the bright green color to all text and dark background to all areas
 call s:h('Normal', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
-call s:h('Comment', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
+call s:h('Comment', s:dark_green_gui, s:dark_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Constant', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Identifier', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Statement', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
@@ -64,3 +66,4 @@ call s:h('DiffText', s:bright_green_gui, s:bright_green_cterm, s:dark_background
 if &background != 'dark'
    set background=dark
 endif
+
