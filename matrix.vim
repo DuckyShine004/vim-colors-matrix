@@ -13,7 +13,9 @@ let g:colors_name = "matrix"
 let s:bright_green_gui = "#00FF00"
 let s:bright_green_cterm = "46"
 let s:dark_green_gui = "#008000"  
-let s:dark_green_cterm = "22"     
+let s:dark_green_cterm = "22"
+let s:white_gui = "#FFFFFF"
+let s:white_cterm = "256"
 let s:dark_background_gui = "#000000"
 let s:dark_background_cterm = "0"
 
@@ -39,13 +41,13 @@ call s:h('Underlined', s:bright_green_gui, s:bright_green_cterm, s:dark_backgrou
 call s:h('Todo', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Error', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('CursorLine', s:bright_green_gui, s:bright_green_cterm, 'NONE', 'NONE')
-call s:h('Visual', s:dark_background_gui, s:dark_background_cterm, s:dark_background_gui, s:dark_background_cterm)
+call s:h('Visual', s:white_gui, s:white_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Search', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('NonText', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('LineNr', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('CursorLineNr', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('MatchParen', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
-call s:h('VertSplit', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
+call s:h('VertSplit', s:dark_green_gui, s:dark_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('StatusLine', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('StatusLineNC', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
 call s:h('Title', s:bright_green_gui, s:bright_green_cterm, s:dark_background_gui, s:dark_background_cterm)
